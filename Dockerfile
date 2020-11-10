@@ -8,7 +8,7 @@ COPY main.py config.ini start.sh /
 
 WORKDIR /
 
-RUN pip install pyrogram tgcrypto
+RUN pip install https://github.com/pyrogram/pyrogram/archive/master.zip tgcrypto
 
 RUN chmod +x /start.sh
 
