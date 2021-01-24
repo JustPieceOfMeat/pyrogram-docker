@@ -1,15 +1,11 @@
-FROM python:latest
+FROM python:alpine
 
 RUN mkdir /sessions /plugins
 
 VOLUME /sessions
 
-COPY main.py config.ini start.sh /
-
 WORKDIR /
 
-RUN pip install https://github.com/pyrogram/pyrogram/archive/master.zip tgcrypto
+COPY . .
 
-RUN chmod +x /start.sh
-
-CMD /start.sh
+CMD ["bash" "start.sh"]
