@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install pyrogram tgcrypto
+pip install pyrogram
 
 if test -f "requirements.txt"; then
     pip install -r requirements.txt
