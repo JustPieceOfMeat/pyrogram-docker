@@ -8,4 +8,4 @@ WORKDIR /
 
 COPY . .
 
-CMD ["bash" "start.sh"]
+CMD ["bash", "start.sh"]
